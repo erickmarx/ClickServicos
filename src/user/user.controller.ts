@@ -10,8 +10,4 @@ export class UserController {
   async createUser(@Body() body: IReqCreate) {
     return await this.userService.createUser(body);
   }
-  @Delete('delete')
-  async deleteAllUsers(): Promise<void> {
-    return await this.userService.deleteUsers();
-  }
 }
